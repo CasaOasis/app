@@ -1,3 +1,4 @@
+import 'package:Casa_oasis/widgets/appbarhome.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -6,15 +7,65 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      appBar: appBarHome(context),
+      body: const Column(
         children: [
-          Row(
-            children: [
-              Text("Casa oasis "),
-              Text("Casa oasis "),
-              Text("Casa oasis ")
-            ],
-          )
+          SingleChildScrollView(
+            scrollDirection:
+                Axis.horizontal, // Establece el desplazamiento horizontal
+            child: Row(
+              children: [
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  "Casa oasis ",
+                  style: TextStyle(fontSize: 25),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

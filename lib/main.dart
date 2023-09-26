@@ -1,5 +1,5 @@
-import 'package:app/screens/home_app.dart';
-import 'package:app/screens/splash_screen.dart';
+import 'package:Casa_oasis/screens/home_app.dart';
+import 'package:Casa_oasis/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,8 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Casa Oasis',
+      theme: ThemeData(
+        primaryColor: Color(0x3A3A3A),
+      ),    
       debugShowCheckedModeBanner: false,
-            initialRoute: '/',
+            initialRoute: '/',  
       routes: {
         '/': (context) => SplashScreen(),
         '/next_screen': (context) => Home(),
