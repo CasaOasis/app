@@ -1,42 +1,43 @@
+import 'package:Casa_oasis/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 
 PreferredSizeWidget appBarHome(BuildContext context) {
-  // Pasamos 'context' como argumento
-  double appBarHeight = 80; // Altura predeterminada de la AppBar
-  double leadingWidth = 150; // Ancho predeterminado del widget leading
-  double iconSize = 36; // Tamaño predeterminado del ícono del botón
+  // Pass 'context' as an argument
+  double appBarHeight = 80; // Default AppBar height
+  double leadingWidth = 150; // Default leading widget width
+  double iconSize = 36; // Default button icon size
 
-  // Obtener el ancho de la pantalla utilizando el contexto
+  // Get the screen width using the context
   double screenWidth = MediaQuery.of(context).size.width;
 
-  // Calcular valores responsivos en función del ancho de la pantalla
+  // Calculate responsive values based on screen width
   if (screenWidth < 600) {
-    // Si la pantalla es pequeña, ajusta la altura de la AppBar y el ancho del widget leading
+    // If the screen is small, adjust AppBar height and leading widget width
     appBarHeight = 60;
     leadingWidth = 100;
     iconSize = 24;
   }
 
   return AppBar(
-    toolbarHeight: appBarHeight,
-    backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
-    leadingWidth: leadingWidth,
+    toolbarHeight: appBarHeight, // Set the AppBar height
+    backgroundColor: AppColors.backgroundColor, // Set the background color
+    leadingWidth: leadingWidth, // Set the width of the leading widget
     leading: Padding(
       padding: const EdgeInsets.only(left: 20),
-      child: Image.asset('assets/logo.jpg'),
+      child:
+          Image.asset('assets/logo.jpg'), // Add an image as the leading widget
     ),
     actions: <Widget>[
       IconButton(
         icon: const Icon(
           Icons.person,
-          color: Colors.black,
+          color: AppColors.btnColorDark, // Set the icon color
         ),
-        iconSize: iconSize,
+        iconSize: iconSize, // Set the icon size
         onPressed: () {
-          // Acción para el botón de usuario
+          // Define an action for the user button
         },
       )
     ],
   );
 }
-

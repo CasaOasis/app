@@ -13,16 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Casa Oasis',
-      theme: ThemeData(
-        primaryColor: Color(0x3A3A3A),
-      ),    
-      debugShowCheckedModeBanner: false,
-            initialRoute: '/',  
+      title: 'Casa Oasis', // Set the title of the app
+      debugShowCheckedModeBanner: false, // Disable the debug banner
+      initialRoute: '/', // Set the initial route
       routes: {
-        '/': (context) => SplashScreen(),
-        '/next_screen': (context) => Home(),
-        // Otras rutas de navegación
+        '/': (context) =>
+            SplashScreen(), // Define the route for the splash screen
+        '/home': (context) => Home(), // Define the route for the home screen
+        // Define other navigation routes here
       },
     );
   }

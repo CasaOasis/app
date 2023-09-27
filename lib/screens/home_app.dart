@@ -1,3 +1,4 @@
+import 'package:Casa_oasis/styles/app_colors.dart';
 import 'package:Casa_oasis/widgets/appbarhome.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class Home extends StatelessWidget {
               children: [
                 Text(
                   "Casa oasis ",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 25, color: AppColors.textColor, fontFamily: 'itim'),
                 ),
                 Text(
                   "Casa oasis ",
