@@ -1,4 +1,4 @@
-import 'package:Casa_oasis/styles/app_colors.dart';
+import 'package:casa_oasis/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 
 PreferredSizeWidget appBarHome(BuildContext context) {

@@ -1,5 +1,5 @@
-import 'package:Casa_oasis/screens/home_app.dart';
-import 'package:Casa_oasis/screens/splash_screen.dart';
+import 'package:casa_oasis/screens/login_screen.dart';
+import 'package:casa_oasis/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) =>
             SplashScreen(), // Define the route for the splash screen
-        '/home': (context) => Home(), // Define the route for the home screen
+        '/login': (context) =>
+            LoginScreen(), // Define the route for the home screen
         // Define other navigation routes here
       },
     );
