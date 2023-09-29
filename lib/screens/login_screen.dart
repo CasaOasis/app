@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
 
     // Return the responsive value based on screen height
-    return screenHeight < 1000 ? smallScreenValue : defaultValue;
+    return screenHeight < 1050 ? smallScreenValue : defaultValue;
   }
 
 
