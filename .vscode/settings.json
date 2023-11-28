@@ -1,4 +1,5 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "cmake.sourceDirectory": "C:/Users/enriq/Documents/Work/oasis/app/app/linux"
+    "cmake.sourceDirectory": "C:/Users/enriq/Documents/Work/oasis/app/app/linux",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

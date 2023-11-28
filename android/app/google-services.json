@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464322103646",
+    "project_id": "casaoasisgtm-9b609",
+    "storage_bucket": "casaoasisgtm-9b609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464322103646:android:92eae4221f33610063a7cf",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRUUtI2Isw8cNquByF4sK1AQ6fdNOSqOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
